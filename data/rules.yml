@@ -1,0 +1,68 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Respond to user asking for the number of majors
+  steps:
+  - intent: so_luong_nganh
+  - action: action_so_luong_nganh
+
+- rule: Respond to request for major info
+  steps:
+  - intent: get_major_info
+  - action: action_get_major_info
+
+- rule: Respond to request for get_condition_info
+  steps:
+  - intent: get_condition_info
+  - action: action_get_condition_info
+
+- rule: Respond to request for get_condition_recipe
+  steps:
+  - intent: get_condition_recipe
+  - action: action_get_condition_recipe
+
+- rule: Respond to request for get_condition_example
+  steps:
+  - intent: get_condition_example
+  - action: action_get_condition_example
+
+- rule: Respond to request for get_condition_theuse
+  steps:
+  - intent: get_condition_theuse
+  - action: action_get_condition_theuse
+
+- rule: Respond to request for get_word_meaning
+  steps:
+  - intent: get_word_meaning
+  - action: action_get_word_meaning
+
+- rule: Respond to request for get_define_tense
+  steps:
+  - intent: get_define_tense
+  - action: action_get_define_tense
+
+- rule: Respond to request for get_formula_tense
+  steps:
+  - intent: get_formula_tense
+  - action: action_get_formula_tense
+
+- rule: Respond to request for get_usage_tense
+  steps:
+  - intent: get_usage_tense
+  - action: action_get_usage_tense
+
+- rule: Respond to request for get_example_tense
+  steps:
+  - intent: get_example_tense
+  - action: action_get_example_tense

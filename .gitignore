@@ -1,0 +1,21 @@
+# Mô hình huấn luyện
+models/
+
+# Dữ liệu tạm thời
+.rasa/
+*.db
+logs/
+
+# Bộ nhớ đệm
+__pycache__/
+*.pyc
+
+# Thông tin nhạy cảm
+.env
+
+# Môi trường ảo
+venv/
+env/
+
+# Khác
+*.log

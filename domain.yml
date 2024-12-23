@@ -1,0 +1,85 @@
+version: '3.1'
+intents:
+- affirm
+- bot_challenge
+- deny
+- get_major_info
+- goodbye
+- greet
+- mood_great
+- mood_unhappy
+- so_luong_nganh
+- get_condition_info
+- get_condition_recipe
+- get_condition_example
+- get_condition_theuse
+- get_word_meaning
+- get_define_tense
+- get_formula_tense
+- get_usage_tense
+- get_example_tense
+
+entities:
+- ma_nganh
+- name
+- recipe
+- theuse
+- example
+- word
+- define_tense
+- formula_tense
+- usage_tense
+- example_tense
+
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_no_major_info:
+  - text: Xin lỗi, mã ngành bạn yêu cầu không tồn tại. Vui lòng thử lại với mã khác.
+  utter_no_condition_info:
+  - text: "Xin lỗi, tôi không tìm thấy thông tin cho câu điều kiện này."
+  utter_no_condition_recipe:
+  - text: "Không tìm thấy công thức của câu điều kiện bạn yêu cầu."
+  utter_no_condition_example:
+  - text: "Xin lỗi, không tìm thấy ví dụ cho câu điều kiện này."
+  utter_no_condition_theuse:
+  - text: "Xin lỗi, không tìm thấy cách sử dụng cho câu điều kiện này."
+  utter_no_word_meaning:
+  - text: "Rất tiếc, tôi không tìm thấy nghĩa của từ này."
+  utter_no_tense_definition:
+  - text: "Xin lỗi, tôi không thể tìm thấy định nghĩa của thì bạn yêu cầu."
+  utter_no_tense_formula:
+  - text: "Xin lỗi, tôi không thể tìm thấy công thức của thì bạn yêu cầu."
+  utter_no_tense_usage:
+  - text: "Xin lỗi, tôi không thể tìm thấy cách sử dụng của thì bạn yêu cầu."
+  utter_no_tense_example:
+  - text: "Xin lỗi, tôi không thể tìm thấy ví dụ của thì bạn yêu cầu."
+
+actions:
+- action_so_luong_nganh
+- action_get_major_info
+- action_default_fallback
+- action_get_condition_info
+- action_get_condition_recipe
+- action_get_condition_theuse
+- action_get_condition_example
+- action_get_word_meaning
+- action_get_define_tense
+- action_get_formula_tense
+- action_get_usage_tense
+- action_get_example_tense
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
