@@ -1,0 +1,120 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Respond to request for get_usage_tense
+  steps:
+  - intent: get_usage_tense
+    entities:
+      - usage_tense: "usage_tense"
+  - action: action_get_usage_tense
+
+- story: Respond to request for get_define_tense
+  steps:
+  - intent: get_define_tense
+    entities:
+      - define_tense: "define_tense"
+  - action: action_get_define_tense
+
+- story: Respond to request for get_formula_tense
+  steps:
+  - intent: get_formula_tense
+    entities:
+      - formula_tense: "formula_tense"
+  - action: action_get_formula_tense
+
+- story: Respond to request for get_example_tense
+  steps:
+  - intent: get_example_tense
+    entities:
+      - example_tense: "example_tense"
+  - action: action_get_example_tense
+
+- story: Respond to request for get_condition_info
+  steps:
+  - intent: get_condition_info
+    entities:
+      - name: "name"
+  - action: action_get_condition_info
+
+- story: Respond to request for get_condition_recipe
+  steps:
+  - intent: get_condition_recipe
+    entities:
+      - recipe: "recipe"
+  - action: action_get_condition_recipe
+
+- story: Respond to request for get_condition_example
+  steps:
+  - intent: get_condition_example
+    entities:
+      - example: "example"
+  - action: action_get_condition_example
+
+- story: Respond to request for get_condition_theuse
+  steps:
+  - intent: get_condition_theuse
+    entities:
+      - theuse: "theuse"
+  - action: action_get_condition_theuse
+
+- story: Respond to request for get_word_meaning
+  steps:
+  - intent: get_word_meaning
+    entities:
+      - word: "word"
+  - action: action_get_word_meaning
+
+- story: Respond to request for ask_sentence_with_word
+  steps:
+  - intent: ask_sentence_with_word
+    entities:
+      - datcau: "datcau"
+  - action: action_ask_sentence_with_word
+
+- story: translate_vn_to_en
+  steps:
+  - intent: translate_vn_to_en
+    entities:
+      - wordvn: "wordvn"  
+  - action: action_translate_vn_to_en
+
+- story: Ask and answer a question
+  steps:
+  - intent: ask_question
+    entities:
+      - question: "question"
+  - action: action_ask_question
+  - intent: answer_question
+    entities:
+      - answer: "A"
+  - action: action_check_answer
+
+

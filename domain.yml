@@ -1,0 +1,88 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - get_usage_tense
+  - get_define_tense
+  - get_example_tense
+  - get_formula_tense
+  - get_condition_example
+  - get_condition_info
+  - get_condition_recipe
+  - get_condition_theuse
+  - nlu_fallback
+  - get_word_meaning
+  - ask_sentence_with_word
+  - translate_vn_to_en
+  - answer_question
+  - ask_question
+
+entities: 
+  - usage_tense
+  - define_tense
+  - example_tense
+  - formula_tense
+  - name
+  - recipe
+  - theuse
+  - example
+  - word
+  - datcau
+  - wordvn
+  - question
+  - answer
+
+slots:
+  correct_answer:
+    type: any
+    influence_conversation: false
+    mappings: []
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_default:
+  - text: Xin lỗi, tôi chưa có thông tin về câu hỏi này. Bạn có thể hỏi câu hỏi khác không?
+
+actions:
+  - action_get_define_tense
+  - action_get_formula_tense
+  - action_get_usage_tense
+  - action_get_example_tense
+  - action_get_condition_info
+  - action_get_condition_recipe
+  - action_get_condition_theuse
+  - action_get_condition_example
+  - action_default_fallback
+  - action_get_word_meaning
+  - action_ask_sentence_with_word
+  - action_translate_vn_to_en
+  - action_ask_question
+  - action_check_answer
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

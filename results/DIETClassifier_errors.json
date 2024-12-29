@@ -1,0 +1,16 @@
+[
+  {
+    "text": "Thử hỏi tôi một câu khác xem nào.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "question",
+        "start": 16,
+        "end": 19,
+        "confidence_entity": 0.7231156826019287,
+        "value": "câu",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

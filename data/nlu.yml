@@ -1,0 +1,282 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: get_define_tense
+  examples: |
+    - [Hiện tại đơn](define_tense) là gì?
+    - Định nghĩa [Hiện tại tiếp diễn](define_tense)
+    - Giải thích về thì [Hiện tại hoàn thành](define_tense)
+    - Giải thích thì [Hiện tại hoàn thành tiếp diễn](define_tense) giúp mình với!
+    - Mình muốn biết về thì [Quá khứ hoàn thành tiếp diễn](define_tense)
+    - Thì [Quá khứ hoàn thành](define_tense) là như thế nào?
+    - Giải thích khái niệm thì [Quá khứ đơn](define_tense)
+    - Thì [Quá khứ tiếp diễn](define_tense) nghĩa là sao?
+    - Thì [Tương lai đơn](define_tense) được định nghĩa thế nào?
+    - Mình không hiểu thì [Tương lai tiếp diễn](define_tense), giải thích giúp!
+    - Nói mình nghe thì [Tương lai hoàn thành](define_tense) là gì?
+    - Giúp mình hiểu về thì [Tương lai hoàn thành tiếp diễn](define_tense)
+    - Thì [quá khứ tiếp diễn](define_tense) là như thế nào?
+    - Hãy định nghĩa thì [tương lai hoàn thành tiếp diễn](define_tense)
+    - Giải nghĩa cho mình thì [quá khứ tiếp diễn](define_tense) với!
+    - Thì [quá khứ hoàn thành](define_tense) được định nghĩa ra sao?
+    - Bạn có thể giải thích thì [hiện tại tiếp diễn](define_tense) không?
+    - Mình cần biết thì [hiện tại hoàn thành](define_tense) là gì?
+    - Nói rõ về thì [tương lai hoàn thành](define_tense) giúp mình
+    - Khái niệm về thì [tương lai tiếp diễn](define_tense) là gì?
+    - Có thể định nghĩa thì [tương lai đơn](define_tense) cho mình được không?
+    - Hãy mô tả ngắn gọn về thì [quá khứ hoàn thành](define_tense)
+    - Định nghĩa nhanh về thì [tương lai hoàn thành](define_tense) giúp mình!
+    - Giải thích đơn giản về thì [hiện tại hoàn thành tiếp diễn](define_tense)
+- intent: get_formula_tense
+  examples: |
+    - Công thức của thì [Hiện tại đơn](formula_tense) là gì?
+    - Thì [Hiện tại tiếp diễn](formula_tense) có công thức như thế nào?
+    - Cho mình biết công thức của thì [Hiện tại hoàn thành](formula_tense)
+    - Mình muốn biết công thức thì [Hiện tại hoàn thành tiếp diễn](formula_tense)
+    - Công thức của thì [Quá khứ đơn](formula_tense) là gì?
+    - Thì [Quá khứ tiếp diễn](formula_tense) có công thức gì?
+    - Công thức của thì [Quá khứ hoàn thành tiếp diễn](formula_tense) là gì?
+    - Mình cần biết công thức của thì [Tương lai đơn](formula_tense)
+    - Hãy nói cho mình công thức thì [Tương lai tiếp diễn](formula_tense)
+    - Công thức thì [Tương lai hoàn thành](formula_tense) là như thế nào?
+    - Mình không nhớ công thức của thì [Tương lai hoàn thành tiếp diễn](formula_tense), nói mình nghe với
+    - Viết công thức của thì [Qúa khứ hoàn thành](formula_tense) giúp mình
+    - Công thức của thì [Tương lai tiếp diễn](formula_tense) được viết thế nào?
+    - Có thể cho mình biết công thức thì [Quá khứ hoàn thành](formula_tense) không?
+    - Giúp mình với, công thức thì [Tương lai hoàn thành](formula_tense) là gì?
+- intent: get_usage_tense
+  examples: |
+    - Thì [Hiện tại đơn](usage_tense) được dùng khi nào?
+    - Cách sử dụng thì [Hiện tại tiếp diễn](usage_tense) là gì?
+    - Hãy nói cho mình cách sử dụng thì [Hiện tại hoàn thành tiếp diễn](usage_tense)
+    - Thì [Quá khứ đơn](usage_tense) dùng trong trường hợp nào?
+    - Khi nào sử dụng thì [Quá khứ tiếp diễn](usage_tense)?
+    - Thì [Quá khứ hoàn thành](usage_tense) được dùng như thế nào?
+    - Mình muốn học cách sử dụng thì [Quá khứ hoàn thành tiếp diễn](usage_tense)
+    - Cách sử dụng thì [Tương lai đơn](usage_tense) như thế nào?
+    - Mình không biết cách dùng thì [Tương lai tiếp diễn](usage_tense), giải thích giúp!
+    - Khi nào thì mình dùng thì [Tương lai hoàn thành](usage_tense)?
+    - Cách sử dụng thì [Tương lai hoàn thành tiếp diễn](usage_tense) là gì?
+    - Hãy nói mình cách dùng thì [Hiện tại tiếp diễn](usage_tense)
+    - Khi nào thì nên sử dụng thì [Tương lai hoàn thành](usage_tense)?
+    - Hãy chỉ cách dùng thì [Quá khứ hoàn thành tiếp diễn](usage_tense)
+    - Khi nào thì dùng thì [Quá khứ hoàn thành](usage_tense)?
+    - Có thể giải thích cách dùng của thì [Tương lai tiếp diễn](usage_tense) được không?
+    - Mình muốn biết cách dùng thì [Hiện tại hoàn thành](usage_tense)
+    - Hãy giải thích trường hợp sử dụng thì [Quá khứ đơn](usage_tense)
+    - Thì [Tương lai hoàn thành tiếp diễn](usage_tense) được dùng khi nào?
+    - Khi nào thì dùng thì [Quá khứ tiếp diễn](usage_tense)?
+- intent: get_example_tense
+  examples: |
+    - Bạn có thể cho mình ví dụ về thì [Hiện tại đơn](example_tense) không?
+    - Hãy đưa ra một số câu ví dụ sử dụng thì [Hiện tại tiếp diễn](example_tense)
+    - Mình cần ví dụ minh họa cho thì [Hiện tại hoàn thành](example_tense)
+    - Ví dụ của thì [Hiện tại hoàn thành tiếp diễn](example_tense) là gì?
+    - Hãy viết một câu ví dụ cho thì [Quá khứ đơn](example_tense)
+    - Mình muốn biết ví dụ về thì [Quá khứ hoàn thành](example_tense)
+    - Hãy cung cấp một câu ví dụ về thì [Tương lai đơn](example_tense)
+    - Bạn có thể viết ví dụ cho thì [Tương lai tiếp diễn](example_tense) không?
+    - Hãy giúp mình lấy một ví dụ về thì [Tương lai hoàn thành tiếp diễn](example_tense)
+    - Hãy liệt kê một vài câu ví dụ về thì [Quá khứ đơn](example_tense)
+    - Mình cần ví dụ thực tế cho thì [Tương lai hoàn thành](example_tense)
+    - Đưa cho mình ví dụ về thì [Hiện tại hoàn thành tiếp diễn](example_tense) đi
+    - Bạn có thể cho ví dụ minh họa của thì [Tương lai tiếp diễn](example_tense) không?
+    - Mình muốn ví dụ cụ thể về thì [Quá khứ hoàn thành tiếp diễn](example_tense)
+    - Hãy đưa ra ví dụ cụ thể cho thì [Quá khứ tiếp diễn](example_tense)
+- intent: get_condition_info
+  examples: |
+    - Cho tôi biết về [Câu điều kiện loại 1](name)
+    - [Câu điều kiện loại 2](name) là gì?
+    - Thế nào là [Câu điều kiện loại 3](name)?
+    - Làm ơn giải thích giúp [Câu điều kiện loại 1](name)
+    - Tôi cần thông tin về [Câu điều kiện loại 0](name)
+- intent: get_condition_recipe
+  examples: |
+    - Cho tôi biết công thức của [Câu điều kiện loại 1](recipe)
+    - Công thức của [Câu điều kiện loại 2](recipe) là gì?
+    - [Câu điều kiện loại 3](recipe) công thức như thế nào?
+    - Cho tôi biết công thức của [Câu điều kiện loại 2](recipe)
+    - [Câu điều kiện loại 1](recipe) công thức là gì?
+    - Cho tôi công thức của [Câu điều kiện loại 3](recipe)
+    - Công thức của [Câu điều kiện loại 0](recipe) là gì?
+    - Cho tôi công thức của [Câu điều kiện loại 0](recipe)
+- intent: get_condition_exampleLam
+  examples: |
+    - Ví dụ của [Câu điều kiện loại 1](example) là gì?
+    - Bạn có thể cho tôi ví dụ về [Câu điều kiện loại 2](example) không?
+    - Cho tôi ví dụ về [Câu điều kiện loại 3](example)
+    - Ví dụ về [Câu điều kiện loại 1](example) là gì vậy?
+    - Bạn có thể cho tôi một ví dụ về [Câu điều kiện loại 0](example)?
+    - Cho tôi một ví dụ về [Câu điều kiện loại 2](example) đi.
+    - Bạn có ví dụ nào cho [Câu điều kiện loại 1](example) không?
+    - [Câu điều kiện loại 3](example) có ví dụ nào không?
+    - Ví dụ của [Câu điều kiện loại 1](example) là như thế nào?
+    - Ví dụ về [Câu điều kiện loại 0](example) cho tôi xem nhé.
+- intent: get_condition_theuse
+  examples: |
+    - Cách sử dụng của [Câu điều kiện loại 1](theuse) là gì?
+    - Bạn có thể giải thích cách sử dụng [Câu điều kiện loại 2](theuse) không?
+    - Cách sử dụng của [Câu điều kiện loại 3](theuse) như thế nào?
+    - Cho tôi biết cách sử dụng của [Câu điều kiện loại 2](theuse)
+    - Cách sử dụng của [Câu điều kiện loại 1](theuse) là gì vậy?
+    - Bạn có thể nói về cách sử dụng [Câu điều kiện loại 3](theuse)?
+    - Cách sử dụng của [Câu điều kiện loại 0](theuse) là gì?
+    - Cho tôi cách sử dụng của [Câu điều kiện loại 0](theuse) nha
+    - Bạn có thể giải thích cách sử dụng [Câu điều kiện loại 1](theuse) không?
+    - Cách sử dụng của [Câu điều kiện loại 2](theuse) như thế nào?
+
+- intent: get_word_meaning
+  examples: |
+    - Từ [Apple](word) có nghĩa là gì?
+    - Bạn có thể giải thích từ [Banana](word) cho tôi không?
+    - Nghĩa của từ [Grapes](word) là gì?
+    - Bạn có thể cho tôi nghĩa của từ [Dog](word) không?
+    
+- intent: ask_sentence_with_word
+  examples: |
+    - Hãy đặt câu với từ [Apple](datcau).
+    - Bạn có thể dùng từ [Banana](datcau) trong câu không?
+    - Làm ơn cho tôi một câu với từ [Grapes](datcau).
+    - Đặt câu với từ [Dog](datcau) giúp tôi.
+    - Hãy đưa ra một ví dụ câu với từ [Cat](datcau).
+    - Bạn có thể cho tôi xem cách dùng từ [Orange](datcau) trong câu không?
+    - Xin hãy tạo một câu với từ [Bird](datcau).
+    - Đặt một câu đơn giản với từ [Table](datcau).
+    - Bạn có thể dùng từ [Car](datcau) trong câu không?
+    - Làm ơn cho tôi một ví dụ với từ [Computer](datcau).
+
+- intent: translate_vn_to_en
+  examples: |
+    - [mẹ](wordvn) dịch sang tiếng Anh là gì?
+    - [bố](wordvn) được viết là gì trong tiếng Anh?
+    - [mẹ](wordvn) trong tiếng Anh gọi là gì?
+    - [bố](wordvn) trong tiếng Anh là gì?
+
+- intent: ask_question
+  examples: |
+    - Bạn có thể đưa ra một [câu hỏi](question) thú vị không?
+    - Tôi muốn nghe [câu hỏi](question) của bạn
+    - Làm ơn đưa ra cho tôi một [câu hỏi](question) bất kỳ
+    - Tôi sẵn sàng trả lời bất kỳ [câu hỏi](question) nào
+    - Hãy đưa ra một [câu hỏi](question) bất kỳ cho tôi
+    - Tôi cần một [câu hỏi](question) mới.
+    - Có thể đặt [câu hỏi](question) tiếp được không?
+    - Tôi muốn nghe thêm một [câu hỏi](question) nữa.
+    - Có [câu hỏi](question) nào khác không?
+    - Thử hỏi tôi một câu khác xem nào.
+    - Bạn có thêm [câu hỏi](question) nào không?
+    - Tôi chờ [câu hỏi](question) mới từ bạn.
+    - Đưa ra [câu hỏi](question) tiếp theo đi bạn.
+
+- intent: answer_question
+  examples: |
+    - Đáp án là [A](answer)
+    - Tôi chọn [B](answer)
+    - Tôi nghĩ đó là [C](answer)
+    - Chọn [A](answer)
+    - [A](answer)
+    
+- synonym: Câu điều kiện loại 0
+  examples: |
+    - câu điều kiện loại 0
+
+- synonym: Câu điều kiện loại 1
+  examples: |
+    - câu điều kiện loại 1
+
+- synonym: Câu điều kiện loại 2
+  examples: |
+    - câu điều kiện loại 2
+
+- synonym: Câu điều kiện loại 3
+  examples: |
+    - câu điều kiện loại 3

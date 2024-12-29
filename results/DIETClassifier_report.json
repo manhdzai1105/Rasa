@@ -1,0 +1,112 @@
+{
+  "example_tense": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 64,
+    "confused_with": {}
+  },
+  "define_tense": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 102,
+    "confused_with": {}
+  },
+  "example": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 50,
+    "confused_with": {}
+  },
+  "datcau": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 10,
+    "confused_with": {}
+  },
+  "name": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 25,
+    "confused_with": {}
+  },
+  "theuse": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 50,
+    "confused_with": {}
+  },
+  "question": {
+    "precision": 0.96,
+    "recall": 1.0,
+    "f1-score": 0.9795918367346939,
+    "support": 24,
+    "confused_with": {}
+  },
+  "answer": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5,
+    "confused_with": {}
+  },
+  "wordvn": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4,
+    "confused_with": {}
+  },
+  "word": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4,
+    "confused_with": {}
+  },
+  "formula_tense": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 63,
+    "confused_with": {}
+  },
+  "recipe": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 40,
+    "confused_with": {}
+  },
+  "usage_tense": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 86,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 0.9981060606060606,
+    "recall": 1.0,
+    "f1-score": 0.9990521327014218,
+    "support": 527
+  },
+  "macro avg": {
+    "precision": 0.996923076923077,
+    "recall": 1.0,
+    "f1-score": 0.9984301412872842,
+    "support": 527
+  },
+  "weighted avg": {
+    "precision": 0.998178368121442,
+    "recall": 1.0,
+    "f1-score": 0.9990705959803277,
+    "support": 527
+  },
+  "accuracy": 0.9993792675356921
+}
